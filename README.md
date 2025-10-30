@@ -53,7 +53,7 @@ python roi_picker.py --mark <picture-path>    # 鼠标绘制多边形形式ROI
 | **🤖 模型推理** | `model` | String | "yolo11n.pt" | YOLO模型权重文件 |
 |  | `inffps` | Integer | 20 | 推理帧率限制（性能优化） |
 |  | `conf` | Float | 0.2 | 检测置信度阈值（0-1之间） |
-|  | `usecuda` | 布尔值 | true | 启用GPU加速（需CUDA支持） |
+|  | `usecuda` | 布尔值 | false | 启用GPU加速（需CUDA支持） |
 |  | `classes` | 数组 | ["bicycle", "motorbike"] | 需要检测的类别列表 |
 |  | `IOU` | Float | 0.1 | 交并比阈值，用于ROI区域判断 |
 | **🗺️ ROI区域** | `roi_park` | List | [[[x1,y1],[x2,y2],[x3,y3]]] | 🅿️ 停车区域顶点（绿色显示） |
