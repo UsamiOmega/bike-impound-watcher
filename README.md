@@ -46,19 +46,19 @@ python roi_picker.py --mark <picture-path>    # 鼠标绘制多边形形式ROI
 
 | 参数类别 | 参数名 | 类型 | 默认值 | 说明 |
 |---------|--------|------|--------|------|
-| **📷 视频输入** | `capwidth` | 整数 | 768 | 视频采集宽度（推荐32的倍数） |
-|  | `capheight` | 整数 | 576 | 视频采集高度（推荐32的倍数） |
-|  | `capfps` | 整数 | 30 | 摄像头原始帧率 |
-|  | `source` | 整数/字符串 | 0 | 视频源：0=默认摄像头，1=外接摄像头，或文件路径 |
-| **🤖 模型推理** | `model` | 字符串 | "yolo11n.pt" | YOLO模型权重文件 |
-|  | `inffps` | 整数 | 20 | 推理帧率限制（性能优化） |
-|  | `conf` | 浮点数 | 0.2 | 检测置信度阈值（0-1之间） |
+| **📷 视频输入** | `capwidth` | Integer | 768 | 视频采集宽度（推荐32的倍数） |
+|  | `capheight` | Integer | 576 | 视频采集高度（推荐32的倍数） |
+|  | `capfps` | Integer | 30 | 摄像头原始帧率 |
+|  | `source` | Integer/String | 0 | 视频源：0=默认摄像头，1=外接摄像头，或文件路径 |
+| **🤖 模型推理** | `model` | String | "yolo11n.pt" | YOLO模型权重文件 |
+|  | `inffps` | Integer | 20 | 推理帧率限制（性能优化） |
+|  | `conf` | Float | 0.2 | 检测置信度阈值（0-1之间） |
 |  | `usecuda` | 布尔值 | true | 启用GPU加速（需CUDA支持） |
 |  | `classes` | 数组 | ["bicycle", "motorbike"] | 需要检测的类别列表 |
-|  | `IOU` | 浮点数 | 0.1 | 交并比阈值，用于ROI区域判断 |
-| **🗺️ ROI区域** | `roi_park` | 多边形数组 | - | 🅿️ 停车区域坐标（绿色显示） |
-|  | `roi_pass` | 多边形数组 | - | 🚦 通行区域坐标（红色显示） |
-| **⏰ 事件日志** | `block_secs` | 整数 | 8 | 事件触发持续时间阈值（秒） |
-|  | `log_interval` | 整数 | 10 | 日志记录间隔时间（秒） |
-|  | `preview` | 布尔值 | true | 启用实时预览窗口 |
-|  | `lagtolerance` | 整数 | 12 | 延迟容忍帧数（性能监控） |
+|  | `IOU` | Float | 0.1 | 交并比阈值，用于ROI区域判断 |
+| **🗺️ ROI区域** | `roi_park` | List | [[[x1,y1],[x2,y2],[x3,y3]]] | 🅿️ 停车区域顶点（绿色显示） |
+|  | `roi_pass` | List | [[[x4,y4],[x5,y5],[x6,y6]]] | 🚦 通行区域顶点（红色显示） |
+| **⏰ 事件日志** | `block_secs` | Integer | 8 | 事件触发持续时间阈值（秒） |
+|  | `log_interval` | Integer | 10 | 日志记录间隔时间（秒） |
+|  | `preview` | Bool | true | 启用实时预览窗口 |
+|  | `lagtolerance` | Integer | 12 | 延迟容忍帧数（性能监控） |
