@@ -1,0 +1,85 @@
+{
+  "capwidth": 768,
+  "capheight": 576,
+  "capfps": 30,
+  "inffps": 20,
+  "lagtolerance": 12,
+  "source": 1,
+  "model": "yolo11n.pt",
+  "conf": 0.2,
+  "classes": [
+    "bicycle",
+    "motorbike"
+  ],
+  "roi_park": [
+    [
+      [
+        289,
+        0
+      ],
+      [
+        167,
+        479
+      ],
+      [
+        0,
+        479
+      ],
+      [
+        1,
+        415
+      ],
+      [
+        209,
+        1
+      ]
+    ],
+    [
+      [
+        505,
+        2
+      ],
+      [
+        719,
+        427
+      ],
+      [
+        717,
+        477
+      ],
+      [
+        536,
+        479
+      ],
+      [
+        420,
+        1
+      ]
+    ]
+  ],
+  "roi_pass": [
+    [
+      [
+        298,
+        4
+      ],
+      [
+        194,
+        479
+      ],
+      [
+        503,
+        479
+      ],
+      [
+        410,
+        1
+      ]
+    ]
+  ],
+  "block_secs": 8,
+  "log_interval": 10,
+  "preview": true,
+  "usecuda": true,
+  "IOU": 0.1
+}
