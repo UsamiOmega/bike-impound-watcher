@@ -35,7 +35,6 @@
   <ItemGroup>
     <Folder Include="config_files\" />
     <Folder Include="weights\" />
-    <Folder Include="snaps\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="config.json" />
